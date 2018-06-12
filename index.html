@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+	<title>Word Analyzer</title>
+</head>
+
+<body class="container">
+  <div id="main">
+  <h1> Word Analyzer</h1>
+  <div class="row" style="align-content: justify;">
+    <h2>Enter text here:</h2>
+    <textarea type="text" v-model.text="inputText"></textarea>
+  </div>
+  <button v-on:click= "wordAnalysis()" type="button">
+    Analyze</button>
+		<h2>The number of words is: </h2>
+		<td v-for="numberOfWords"> {{wordCount}} </td>
+		<h2>The number of characters is: </h2>
+		<td v-for="numberOfChars"> {{charCount}} </td>
+		<h2>The number of sentences is: </h2>
+		<td v-for="numberOfSentences"> {{sentCount}} </td)
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
